@@ -281,8 +281,8 @@ function hideButton() {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
 
-            var fontSize = 30px;
-            ctx.font = fontSize + "px 'Times New Roman',  serif";
+            var fontSize = canvas.width / 15;
+            ctx.font = fontSize + "px 'Source Sans Pro', sans-serif";
 
             var text = "Hãy để thời gian tiếp theo người đồng hành cùng em vẫn sẽ là anh nhé.";
 			
@@ -293,7 +293,7 @@ function hideButton() {
   var textWidth = ctx.measureText(text).width;
             while (textWidth > canvas.width - 40) {
                 fontSize -= 2;
-                ctx.font = fontSize + "px  'Times New Roman',  serif";
+                ctx.font = fontSize + "px 'Source Sans Pro', sans-serif";
                 textWidth = ctx.measureText(text).width;
             }
 
